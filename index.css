@@ -8,7 +8,7 @@ body {
     background-color: #224870;
 }
 
-.container {
+.contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@ body {
     box-shadow: 15px 10px 0px 5px #00000033;
 }
 
-button {
+.calculadora button {
     cursor: pointer;
     margin: 5px;
     padding: 0;
@@ -34,6 +34,18 @@ button {
     border: none;
     background-color: #00916e;
     box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+}
+
+.menos{
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    grid-template-rows: repeat(2, 50px);
+    position: relative;
+}
+
+
+.menos button {
+    font-size: 1em;
 }
 
 button:active {
@@ -48,7 +60,7 @@ button:focus {
     grid-column: span 2;
 }
 
-.display {
+.pantalla {
     grid-column: 1 / -1;
     padding: 16px;
     display: flex;
